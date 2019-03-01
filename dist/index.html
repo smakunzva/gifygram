@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Giphygram</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=0, user-scalable=0">
+
+        <meta name="apple-mobile-web-app-title" content="Giphygram">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-startup-image" href="/launch.efdefe9b.png">
+
+        <!-- <link rel="manifest" href="manifest.json"> -->
+        <link rel="manifest" href="/manifest.webmanifest">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.9cc31df5.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.7619a968.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.14510678.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.f4836936.png">
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60.53e7d008.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.d7a253ef.png">
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.56364adb.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.127cbd87.png">
+        <link rel="icon" type="image/png" href="/favicon-196x196.8431525f.png" sizes="196x196">
+        <link rel="icon" type="image/png" href="/favicon-96x96.5448df57.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/favicon-32x32.60dc2a18.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-16x16.38bb06e6.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/favicon-128.5e04fd93.png" sizes="128x128">
+
+        <meta name="msapplication-TileColor" content="#2D91F8">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.e864ebf4.png">
+        <meta name="msapplication-square70x70logo" content="/mstile-70x70.97bdfb45.png">
+        <meta name="msapplication-square150x150logo" content="/mstile-150x150.b76a332f.png">
+        <meta name="msapplication-wide310x150logo" content="/mstile-310x150.0e84637f.png">
+        <meta name="msapplication-square310x310logo" content="/mstile-310x310.2ad17a5e.png">
+
+        <link rel="stylesheet" href="/bootstrap.min.a5b4ea6a.css">
+        <script src="/jquery-3.3.1.96cc5c5a.js" type="text/javascript"></script>
+        <script src="/main.1f19ae8e.js" type="text/javascript"></script>
+        <script src="/sw.js" type="text/javascript"></script>
+
+        <style>.spinner {
+                animation-name: spin;
+                animation-duration: 2000ms;
+                animation-iteration-count: infinite; 
+                animation-timing-function: linear;
+            }
+            @keyframes spin {
+                from { transform:rotate(0deg); }
+                to {transform:rotate(360deg); }
+            }</style>
+
+    <script src="/bootstrap.min.a5b4ea6a.js"></script></head>
+
+    <body>
+
+        <!-- Nav Header -->
+        <header class="navbar sticky-top navbar-expand bg-primary navbar-dark">
+            <!-- Logo -->
+            <img src="/logo.6023b87e.png" alt="Giphygram" width="60" class="img-fluid navbar-brand">
+
+            <div id="update" class="ml-auto">
+                <a class="icon" href="#update"><img width="25" src="/flame.86e4b73b.png"></a>
+                <img class="icon d-none spinner" width="20" src="/sync.f63f7ef6.png">
+            </div>
+
+        </header>
+
+        <!-- Main Conatainer -->
+        <main class="container p-1">
+
+            <!-- Error Alert -->
+            <div class="alert alert-danger text-center m-1" style="display:none;">
+                Could not update Giphy's
+            </div>
+
+            <!-- Giphys -->
+            <div id="giphys" class="row no-gutters"></div>
+
+        </main>
+    </body>
+
+</html>
