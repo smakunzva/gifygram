@@ -1,4 +1,4 @@
-window.$ = require('jquery')
+// window.$ = require('jquery')
 // Giphy API object
 var giphy = {
     url: 'https://api.giphy.com/v1/gifs/trending',
