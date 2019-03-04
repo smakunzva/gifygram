@@ -107,7 +107,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"sw.js":[function(require,module,exports) {
 var pwaKey = 'udemy-pwa1.0';
 var gifyKey = 'gify-v0.1';
-var localRes = ['index.html', 'main.js', '/images/flame.png', '/images/icon.png', '/images/launch.png', '/images/logo.png', 'vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css', 'vendor/jquery-3.3.1.js']; // intercept network request
+var localRes = ['index.html', 'main.js', 'images/flame.png', 'images/icon.png', 'images/launch.png', 'images/logo.png', 'vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css', 'vendor/jquery-3.3.1.js']; // intercept network request
 
 self.addEventListener('fetch', function (e) {
   //App shell 
@@ -235,7 +235,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58894" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61951" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
