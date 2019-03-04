@@ -111,7 +111,7 @@ var localRes = ['index.html', 'main.js', 'images/flame.png', 'images/icon.png', 
 
 self.addEventListener('fetch', function (e) {
   //App shell 
-  if (e.request.url.match('localhost')) {
+  if (e.request.url.match(location.origin)) {
     e.respondWith(staticCache(e.request, pwaKey));
   } //API request
   else if (e.request.url.match('api.giphy.com/v1/gifs/trending')) {
@@ -235,7 +235,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61951" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54119" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

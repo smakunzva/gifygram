@@ -7,7 +7,7 @@ let localRes = ['index.html','main.js', 'images/flame.png','images/icon.png','im
 self.addEventListener('fetch', (e)=> {
 
  //App shell 
-  if(e.request.url.match('localhost')){
+  if(e.request.url.match(location.origin)){
     e.respondWith(
       staticCache(e.request, pwaKey)
     )
