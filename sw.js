@@ -1,4 +1,4 @@
-let pwaKey = 'udemy-pwa1.0';
+let pwaKey = 'udemy-pwa1.1';
 let gifyKey = 'gify-v0.1';
 let localRes = ['index.html','main.js', 'images/flame.png','images/icon.png','images/launch.png', 'images/logo.png'
 , 'vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css', 'vendor/jquery-3.3.1.js'];
